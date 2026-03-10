@@ -99,7 +99,7 @@ const RecentProjects = () => {
                       <ul className="space-y-2 mb-4 pt-1">
                         {project.contributions.map((point, i) => (
                           <li key={i} className="flex gap-2 items-start text-sm text-white/60">
-                            <FaCheckCircle className="text-purple/60 mt-0.5 flex-shrink-0 text-xs" />
+                            <FaCheckCircle className="text-purple/60 mt-0.5 shrink-0 text-xs" />
                             <span>{point}</span>
                           </li>
                         ))}

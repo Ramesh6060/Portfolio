@@ -43,7 +43,7 @@ export const FloatingNav = ({
     // Always in DOM, always position:fixed — never causes layout shift
     <div
       className={cn(
-        "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/20 rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-4 pl-4 py-2 items-center justify-center space-x-4 pointer-events-none",
+        "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/20 rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-5000 pr-4 pl-4 py-2 items-center justify-center space-x-4 pointer-events-none",
         "transition-all duration-200",
         visible
           ? "opacity-100 translate-y-0 pointer-events-auto"

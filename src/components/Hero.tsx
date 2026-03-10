@@ -40,7 +40,7 @@ export const Hero = () => {
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 text-white">
             I build{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-blue-400">
               things
             </span>
             <br />
@@ -75,19 +75,19 @@ export const Hero = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="flex-shrink-0 order-first lg:order-last"
+          className="shrink-0 order-first lg:order-last"
         >
-          <div className="relative w-60 md:w-72 lg:w-[290px]">
+          <div className="relative w-60 md:w-72 lg:w-290px">
             {/* Ambient glow */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-600/20 via-blue-600/10 to-transparent blur-2xl scale-110 pointer-events-none" />
+            <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-purple-600/20 via-blue-600/10 to-transparent blur-2xl scale-110 pointer-events-none" />
 
             {/* Photo frame */}
-            <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-gradient-to-br from-[#0d0d2b] to-[#070714] shadow-[0_0_50px_rgba(139,92,246,0.10)]">
+            <div className="relative w-full aspect-3/4 rounded-2xl overflow-hidden bg-linear-to-br from-[#0d0d2b] to-[#070714] shadow-[0_0_50px_rgba(139,92,246,0.10)]">
 
               {/* Placeholder — only shown if photo fails to load */}
               {photoFailed && (
                 <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-                  <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-purple-500/20 to-blue-500/20 border border-purple-500/30 flex items-center justify-center mb-3">
+                  <div className="w-20 h-20 rounded-xl bg-linear-to-br from-purple-500/20 to-blue-500/20 border border-purple-500/30 flex items-center justify-center mb-3">
                     <span className="text-3xl font-bold text-purple-300">R</span>
                   </div>
                   <p className="text-white/20 text-xs font-mono text-center px-6 leading-relaxed">
@@ -104,7 +104,7 @@ export const Hero = () => {
                 onError={() => setPhotoFailed(true)}
               />
 
-              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#070714]/70 to-transparent pointer-events-none" />
+              <div className="absolute bottom-0 left-0 right-0 h-20 bg-linear-to-t from-[#070714]/70 to-transparent pointer-events-none" />
             </div>
           </div>
         </motion.div>
